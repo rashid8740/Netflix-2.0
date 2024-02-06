@@ -1,5 +1,8 @@
 import React from "react";
 import logo from "../logo.png";
+import profile from "../profile.png";
+import { BellIcon } from "@heroicons/react/24/outline";
+import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 
 function Navbar() {
   const navLink = [
@@ -13,16 +16,27 @@ function Navbar() {
 
   return (
     <div className="flex bg-black w-full h-16 ">
-      <img className="brightness-200 ml-12" src={logo} alt="logo" />
-      <div className="flex  text-white justify-center items-center gap-4 ml-10 text-sm font-bold">
-        {navLink.map((navs) => (
-          <div key={navs.url}>
-            <a href={navs.url}> {navs.name} </a>
-          </div>
-        ))}
+      {/* left-side */}
+      <>
+        <img className=" ml-12" src={logo} alt="logo" />
+        <div className="flex  text-white justify-center items-center gap-4 ml-10 text-sm font">
+          {navLink.map((navs) => (
+            <div key={navs.url}>
+              <a href={navs.url}> {navs.name} </a>
+            </div>
+          ))}
+        </div>
+      </>
+      {/* right-side */}
+      <div className="flex justify-center items-center ml-auto mx-16 text-white gap-5">
+        <MagnifyingGlassIcon className="h-6 w-6" />
+        <h1>Kids</h1>
+        <BellIcon className="h-6 w-6" />
+        <div>
+          <img className=" h-6 w-6 " src={profile} alt="profile" />
+        </div>
       </div>
     </div>
   );
 }
-
 export default Navbar;
