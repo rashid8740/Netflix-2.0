@@ -15,11 +15,11 @@ function Navbar() {
   ];
 
   return (
-    <div className="flex bg-black w-full h-16 ">
+    <div className="flex bg-transparent w-full h-auto sticky top-0 justify-center items-center z-10">
       {/* left-side */}
       <>
-        <img className=" ml-12" src={logo} alt="logo" />
-        <div className="flex  text-white justify-center items-center gap-4 ml-10 text-sm font">
+        <img className=" md:ml-12 ml-5 h-10  md:h-20" src={logo} alt="logo" />
+        <div className="flex  text-white justify-center items-center gap-4 ml-10 text-sm  hidden md:flex">
           {navLink.map((navs) => (
             <div key={navs.url}>
               <a href={navs.url}> {navs.name} </a>
@@ -28,9 +28,9 @@ function Navbar() {
         </div>
       </>
       {/* right-side */}
-      <div className="flex justify-center items-center ml-auto mx-16 text-white gap-5">
+      <div className="flex justify-center items-center ml-auto  md:auto text-white gap-5 mx-5 ">
         <MagnifyingGlassIcon className="h-6 w-6" />
-        <h1>Kids</h1>
+        <h1 className="hidden md:flex">Kids</h1>
         <BellIcon className="h-6 w-6" />
         <div>
           <img className=" h-6 w-6 " src={profile} alt="profile" />
