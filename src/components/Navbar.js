@@ -15,7 +15,7 @@ function Navbar() {
   ];
 
   return (
-    <div className="flex bg-transparent w-full h-auto sticky top-0 justify-center items-center z-10">
+    <div className="flex bg-transparent w-full h-auto sticky top-0 justify-center items-center">
       {/* left-side */}
       <>
         <img className=" md:ml-12 ml-5 h-10  md:h-20" src={logo} alt="logo" />

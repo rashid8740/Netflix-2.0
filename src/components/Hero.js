@@ -1,10 +1,11 @@
 import React from "react";
 import Navbar from "./Navbar";
+import { PlayIcon, InformationCircleIcon } from "@heroicons/react/24/solid";
 
 function Hero() {
   return (
     <div
-      className="h-[35.66vh] md:h-[90vh] absolute inset-0 bg-center bg-cover "
+      className="h-[40.66vh] md:h-[90vh] inset-0 bg-center bg-cover "
       style={{ backgroundImage: `url('/Images/fool-me.jpg')` }}
     >
       <Navbar />
@@ -43,6 +44,19 @@ function Hero() {
             {" "}
             #5 in TV Shows Today
           </span>
+        </div>
+        <div className="flex text-white  mt-3 text-xs">
+          When ex-soldier Maya sees her murdered <br /> husband on a secret
+          nanny cam, she uncovers <br /> a deadly conspiracy that stretches deep
+          into the past.
+        </div>
+        <div className="flex mt-3">
+          <button className="bg-white px-5  py-2 mt-4 rounded-md font-bold flex gap-1 items-center ">
+            <PlayIcon className="h-5 w-5" /> Play{" "}
+          </button>
+          <button className="bg-black px-5  py-2 mt-4 rounded-md ml-3  opacity-50 text-white font-bold flex gap-1 items-center ">
+            <InformationCircleIcon className="h-5 w-5" /> More Info
+          </button>
         </div>
       </div>
     </div>
