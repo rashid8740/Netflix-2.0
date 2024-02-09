@@ -11,6 +11,8 @@ function App() {
         fetchUrl={requests.fetchNetflixOriginals}
       />
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
+
+      <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
     </div>
   );
 }
