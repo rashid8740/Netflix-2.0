@@ -37,7 +37,7 @@ function Navbar() {
   return (
     <div
       className={`flex ${
-        isScrolled ? "bg-black opacity-70" : "bg-transparent"
+        isScrolled ? "bg-black opacity-71" : "bg-transparent"
       } w-full h-auto sticky top-0 justify-center items-center transition-colors duration-300 ease-in-out`}
     >
       {/* left-side */}

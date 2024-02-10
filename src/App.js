@@ -13,6 +13,7 @@ function App() {
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
 
       <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
+      <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
     </div>
   );
 }

@@ -20,7 +20,7 @@ function Row({ title, fetchUrl }) {
   console.log(movies);
 
   return (
-    <div className="">
+    <div className="bg-black">
       <h1 className="text-white font-bold flex sticky ">{title}</h1>
       {/* movie */}
       <div className="flex overflow-y-hidden overflow-x-scroll ">
