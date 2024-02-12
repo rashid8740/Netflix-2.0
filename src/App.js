@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Row from "./components/Row";
 import requests from "./Requests";
@@ -14,6 +15,7 @@ function App() {
 
       <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
       <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
+      <Footer />
     </div>
   );
 }
