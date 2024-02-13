@@ -21,9 +21,9 @@ function Row({ title, fetchUrl }) {
 
   return (
     <div className="bg-black">
-      <h1 className="text-white font-bold flex sticky ">{title}</h1>
+      <h1 className="text-white font-bold flex sticky  m-2">{title}</h1>
       {/* movie */}
-      <div className="flex overflow-y-hidden overflow-x-scroll ">
+      <div className=" row flex overflow-y-hidden overflow-x-scroll ">
         {movies.map((movie) => (
           <img
             className=" w-full max-w-[100px] object-contain ml-1 mr-2"

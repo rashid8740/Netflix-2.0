@@ -11,7 +11,11 @@ function App() {
         title="NETFLIX ORIGINALS"
         fetchUrl={requests.fetchNetflixOriginals}
       />
-      <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
+      <Row
+        title="Trending Now"
+        fetchUrl={requests.fetchTrending}
+        style={{ WebkitScrollbar: { display: "none" } }}
+      />
 
       <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
       <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
