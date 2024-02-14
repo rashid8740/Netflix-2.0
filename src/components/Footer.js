@@ -23,7 +23,7 @@ const footerLinkFour = [
 
 function Footer() {
   return (
-    <div className="flex bg-black text-gray-400 w-full justify-between p-4 text-sm ">
+    <div className="flex bg-black text-gray-300 w-full justify-between p-4 text-sm ">
       <div>
         {footerLinkONe.map((nav, index) => (
           <div key={index} className="p-3">
