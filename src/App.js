@@ -15,6 +15,7 @@ function App() {
 
       <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
       <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
+      <Row title="Horror Movies" fetchUrl={requests.fetchNetflixOriginals} />
 
       <Footer />
     </div>
