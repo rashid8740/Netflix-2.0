@@ -14,6 +14,7 @@ function App() {
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
       <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
       <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
+      <Row title="Horror Movies" fetchUrl={requests.fetchTrending} />
 
       <Footer />
     </div>
@@ -21,3 +22,4 @@ function App() {
 }
 
 export default App;
+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;
